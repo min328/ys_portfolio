@@ -1,6 +1,28 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300&display=swap"); /* japanese font */
 
+div#toTop {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  line-height: 50px;
+  text-align: center;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+div#goBack {
+  position: absolute;
+  right: 46px;
+  top: 80px;
+  cursor: pointer;
+}
+
+
 footer#footer {
   background-color: transparent;
 }
@@ -114,7 +136,7 @@ main#project {
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
   padding: 40px 10px;
-  /* display: none; */
+  display: none;
   position: relative;
 }
 
@@ -145,8 +167,8 @@ main#project {
 }
 
 .functionItem div.closeBtn {
-  width: 35px;
-  height: 35px;
+  width: 70px;
+  height: 70px;
   position: absolute;
   right: 0px;
   top: 0;
@@ -154,8 +176,8 @@ main#project {
 }
 
 .functionItem div.closeBtn > div {
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
   border-left: 1px solid #fff;
   position: absolute;
   right: 0;
@@ -164,15 +186,11 @@ main#project {
 
 .functionItem div.closeBtn > div:first-child {
   transform: rotate(45deg);
-  top: 13.5px;
-  /* 아래가 버튼 클릭했을때 css top 포지션은 두기. */
-  /* transform: rotate(90deg); */
+  top: 26.5px;
+
 }
 .functionItem div.closeBtn > div:last-child {
   transform: rotate(-44deg);
-  /* 아래가 버튼 클릭했을때 css */
-  /* top: 13.5px;
-transform: rotate(90deg); */
 }
 
 #project div#download {
@@ -211,7 +229,7 @@ transform: rotate(90deg); */
 #download div.flexContainer > div a:hover {
   color: #000;
   background-color: #fff;
-  transition: 0.8s;
+  transition: 0.2s;
 }
 
 /* div.seperateLine css */
@@ -466,3 +484,38 @@ div#functionContentArea div#fn10 div.row2 div.aside {
 #fn10 div.row2 > div.flexContainer {
   margin-top: 100px;
 }
+
+/* function Contents end */
+
+/* keyframes start */
+
+@keyframes fadeIn_1 {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 100%;
+  }
+}
+
+@keyframes fadeIn_2 {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+header {
+  animation: 3s ease-in-out 0s 1 fadeIn_1;
+}
+
+main, div#goBack {
+  animation: 2s ease-in-out 0s 1 fadeIn_2;
+}
+
+/* keyframes end */

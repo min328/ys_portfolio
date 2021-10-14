@@ -9,11 +9,27 @@
     <link rel="stylesheet" href="../style/workProject.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="/script/workScript.js"></script>
+    <script>
+        $(function(){
+            $(window).scroll(function(){
+                var scrollValue = $(window).scrollTop();
+                // $("div#toTop").text(scrollValue);
+                if(scrollValue > 199) {
+                    $("div#toTop").fadeIn();
+                } else if(scrollValue <= 199) {
+                    $("div#toTop").fadeOut();
+                }
+
+            });
+        });
+    </script>
 </head>
 <body>
+    <div id="goBack">go back ←</div>
+    <div id="toTop">top</div>
     <header id="header" class="flexContainer">
         <div id="headerLogo">
-            이용수
+            LEE Y.S.
         </div>
         <nav id="headerMenu">
             <ul class="flexContainer">
@@ -39,7 +55,7 @@
         <div id="mainMessage">
             ゲームプログラミング研修で全体過程仕上げのプロジェクトとして企画した作品です。私を含め4人で一つのチームで"アイザック"というゲームをモチーフに作りました。4人がそれぞれ違うマップを担当にして、ある意味1つのゲームの中に4つのゲームを入れようとしていて、今ご覧の画面の内容はひたすら自分が作った部分だけをアップロードしました。従来の「アイザック」ゲームは、2Dフラッシュゲームに近いです。アイザックの攻撃方法、ストーリーラインなどはそのままにして3D形態で具現し、普段から好きなRPGゲームの形で制作しようとしました。最初にゲームプログラミングの勉強を始めて身につけてきた機能を具現することに焦点を置きました。
         </div> <!-- div#mainMessage -->
-        <div class="seperateLine">
+        <div id="functionLine" class="seperateLine">
             <p>functions</p>
         </div> <!-- div.seperateLine : functions -->
         <div id="functionArea">
@@ -110,7 +126,7 @@
         </div> <!-- div#functionArea -->
         <div id="functionContentArea">
             <div id="bg"><!-- background color --></div>
-            <div id="fn1" class="functionItem" style="display: none;">
+            <div id="fn1" class="functionItem">
                 <div class="closeBtn"><div></div><div></div></div>
                 <div class="row1">
                     <p class="title">マネージャーオブジェクト</p>
@@ -127,7 +143,7 @@
                     </div>
                 </div> <!-- div.row2 -->
             </div> <!-- div#fn1 -->
-            <div id="fn2" class="functionItem" style="display: none;">
+            <div id="fn2" class="functionItem">
                 <div class="closeBtn"><div></div><div></div></div>
                 <div class="row1">
                     <p class="title">キャラクター制御（移動、回転）</p>
@@ -151,7 +167,7 @@
                     </div>
                 </div> <!-- div.row2 -->
             </div> <!-- div#fn2 -->
-            <div id="fn3" class="functionItem" style="display: none;">
+            <div id="fn3" class="functionItem">
                 <div class="closeBtn"><div></div><div></div></div>
                 <div class="row1">
                     <p class="title">アニメーション</p>
@@ -195,7 +211,7 @@
                     </div>
                 </div> <!-- div.row2 -->
             </div> <!-- div#fn3 -->
-            <div id="fn4" class="functionItem" style="display: none;">
+            <div id="fn4" class="functionItem">
                 <div class="closeBtn"><div></div><div></div></div>
                 <div class="row1">
                     <p class="title">オブジェクトプーリン</p>
@@ -217,7 +233,7 @@
                     </div>
                 </div> <!-- div.row2 -->
             </div> <!-- div#fn4 -->
-            <div id="fn5" class="functionItem" style="display:none;">
+            <div id="fn5" class="functionItem">
                 <div class="closeBtn"><div></div><div></div></div>
                 <div class="row1">
                     <p class="title">ランダム攻撃</p>
@@ -266,7 +282,7 @@
                     </div>
                 </div> <!-- div.row2 -->
             </div> <!-- div#fn5 -->
-            <div id="fn6" class="functionItem" style="display:none;">
+            <div id="fn6" class="functionItem">
                 <div class="closeBtn"><div></div><div></div></div>
                 <div class="row1">
                     <p class="title">ナビメッシュエージェント</p>
@@ -304,7 +320,7 @@
                     </div>
                 </div> <!-- div.row2 -->
             </div> <!-- div#fn6 -->
-            <div id="fn7" class="functionItem" style="display:none;">
+            <div id="fn7" class="functionItem">
                 <div class="closeBtn"><div></div><div></div></div>
                 <div class="row1">
                     <p class="title">マップ移動（ポータル）</p>
@@ -321,7 +337,7 @@
                     </div>
                 </div> <!-- div.row2 -->
             </div> <!-- div#fn7 -->
-            <div id="fn8" class="functionItem" style="display:none;">
+            <div id="fn8" class="functionItem">
                 <div class="closeBtn"><div></div><div></div></div>
                 <div class="row1">
                     <p class="title">UI生成</p>
@@ -342,7 +358,7 @@
                     </div>
                 </div> <!-- div.row2 -->
             </div> <!-- div#fn8 -->
-            <div id="fn9" class="functionItem" style="display:none;">
+            <div id="fn9" class="functionItem">
                 <div class="closeBtn"><div></div><div></div></div>
                 <div class="row1">
                     <p class="title">商店</p>
@@ -399,8 +415,8 @@
         <div id="download">
             <p>以下のリンクにアクセスすると、プロジェクト全体のファイルをダウンロードできます。 作成したスクリプトを閲覧できます。</p>
             <div class="flexContainer">
-                <div><a href="https://drive.google.com/drive/folders/1UzPEkOCDN4hKCB71jKYJzESnybCzeCKA?usp=sharing">Google Drive</a></div>
-                <div><a href="https://o365doowon.sharepoint.com/:f:/s/LEEYONGSU/Eioyi2WGuqpAr6XkbsojqHABK57t-qTqDpzHFn_qA1iOFg?e=TbCx46">One Drive</a></div>
+                <div><a href="https://drive.google.com/drive/folders/1UzPEkOCDN4hKCB71jKYJzESnybCzeCKA?usp=sharing" target="_blank">Google Drive</a></div>
+                <div><a href="https://o365doowon.sharepoint.com/:f:/s/LEEYONGSU/Eioyi2WGuqpAr6XkbsojqHABK57t-qTqDpzHFn_qA1iOFg?e=TbCx46" target="_blank">One Drive</a></div>
             </div>
         </div> <!-- div#download -->
     </main> <!-- main#project -->

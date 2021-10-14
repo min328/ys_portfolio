@@ -46,6 +46,37 @@ $(function(){
         var divIdVal = $(this).attr("data-link");
         var link = "main#project div#functionContentArea div#" + divIdVal;
         $("main#project div#functionContentArea div.functionItem").css({"display":"none"});
-        $(link).show();
+        $(link).slideDown(1000);
+    });
+
+    // top button 
+    $("div#toTop").click(function(){
+        $("html").animate(
+            {scrollTop : 0 }
+            , 400 
+        );
+    	return false;
+    });
+
+    // go back button 
+    $("div#goBack").click(function(){
+        history.go(-1);
+    });
+
+    // function close button 
+    $("div.functionItem div.closeBtn").click(function(){
+        $(this).children("div").eq(0).css({
+            "right" : "20px"
+            , "transform" : "rotate(90deg)"
+            , "transition" : "0.5s"
+        });
+        $(this).children("div").eq(-1).css({
+            "top" : "-12px"
+            , "right" : "20px"
+            , "transform" : "rotate(-90deg)"
+            , "transition" : "0.5s"
+        });
+
+        $(this).parent("div.functionItem").delay(700).slideUp(1000);
     });
 });
