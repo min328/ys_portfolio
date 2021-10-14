@@ -1,0 +1,468 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300&display=swap"); /* japanese font */
+
+footer#footer {
+  background-color: transparent;
+}
+
+#footer p {
+  color: #fff;
+  font-size: 65px;
+  text-align: center;
+}
+
+main#project {
+  padding: 100px 10%;
+  margin: 0 auto;
+}
+
+#project div#projectTitle {
+  font-size: 80px;
+  text-align: center;
+}
+
+#project div#projectVideo {
+  margin-top: 50px;
+  text-align: center;
+}
+
+#project div#projectVideo video {
+  width: 100%;
+}
+
+#project div#mainMessage {
+  width: 900px;
+  margin-left: 240px;
+  margin-bottom: 120px;
+  font-family: "M PLUS 1p", sans-serif;
+}
+
+#project div#functionArea {
+  margin-bottom: 20px;
+}
+
+#functionArea > div.flexContainer {
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#functionArea div.function {
+  width: 210px;
+  height: 160px;
+  position: relative;
+}
+
+.function div.functionImg {
+  width: inherit;
+  height: inherit;
+}
+
+.functionImg img {
+  width: inherit;
+  height: inherit;
+}
+
+.function a {
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  padding-top: 70px;
+  text-align: center;
+  font-size: 14px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-family: "M PLUS 1p", sans-serif;
+  border: 1px solid #aaa;
+  cursor: pointer;
+}
+
+.function a:hover {
+  color: #333;
+  left: -5px;
+  top: -5px;
+  background-color: #fff;
+  font-weight: bold;
+}
+
+.function a.selected {
+  color: #000;
+  background-color: #fff;
+  left: -5px;
+  top: -5px;
+  font-weight: bold;
+}
+
+#project div#functionContentArea {
+  margin-top: 50px;
+  position: relative;
+}
+
+#functionContentArea div#bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #999;
+  opacity: 0.2;
+}
+
+#functionContentArea div.functionItem {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  padding: 40px 10px;
+  /* display: none; */
+  position: relative;
+}
+
+.functionItem div.row1 {
+  padding-left: 10px;
+}
+
+.row1 p.title {
+  font-weight: bold;
+  font-size: 28px;
+  font-family: "M PLUS 1p", sans-serif;
+}
+
+.row1 p.subtitle {
+  color: #aaa;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: "M PLUS 1p", sans-serif;
+}
+
+.functionItem div.row2 {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.functionItem div.row2 * {
+  font-family: "M PLUS 1p", sans-serif;
+}
+
+.functionItem div.closeBtn {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  right: 0px;
+  top: 0;
+  cursor: pointer;
+}
+
+.functionItem div.closeBtn > div {
+  width: 20px;
+  height: 20px;
+  border-left: 1px solid #fff;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.functionItem div.closeBtn > div:first-child {
+  transform: rotate(45deg);
+  top: 13.5px;
+  /* 아래가 버튼 클릭했을때 css top 포지션은 두기. */
+  /* transform: rotate(90deg); */
+}
+.functionItem div.closeBtn > div:last-child {
+  transform: rotate(-44deg);
+  /* 아래가 버튼 클릭했을때 css */
+  /* top: 13.5px;
+transform: rotate(90deg); */
+}
+
+#project div#download {
+  width: 100%;
+  text-align: left;
+}
+
+#download p {
+  font-family: "M PLUS 1p", sans-serif;
+  margin-bottom: 20px;
+}
+
+#download div.flexContainer {
+  justify-content: space-between;
+}
+
+#download div.flexContainer > div {
+  width: 540px;
+  height: 200px;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+#download a {
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  line-height: 200px;
+  text-align: center;
+  font-size: 25px;
+  font-style: italic;
+  font-family: "M PLUS 1p", sans-serif;
+  display: inline-block;
+}
+
+#download div.flexContainer > div a:hover {
+  color: #000;
+  background-color: #fff;
+  transition: 0.8s;
+}
+
+/* div.seperateLine css */
+#project div.seperateLine p::before {
+  content: "― ";
+}
+
+#project > div.seperateLine {
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+/* download line */
+#project > div.seperateLine:nth-child(9) {
+  margin-top: 120px;
+}
+
+/* function content specific css start */
+/* common */
+div#functionContentArea .subTitle {
+  color: #000;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+div#functionContentArea div.row2 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#functionContentArea div.row2 div.imgBox img {
+  width: inherit;
+}
+
+/* function 1 */
+div#functionContentArea div#fn1 div.row2 > div {
+  flex: 1;
+}
+
+div#functionContentArea div#fn1 div.row2 > div:last-child {
+  padding-left: 20px;
+}
+
+/* function 2 */
+div#functionContentArea div#fn2 div.row2 div.flexContainer {
+  margin-bottom: 40px;
+}
+
+/* function 2, first div*/
+div#functionContentArea div#fn2 div.row2 div.flexContainer div.aside {
+  flex: 1;
+  padding-left: 20px;
+}
+
+#fn2 div.row2 div.imgBox {
+  width: 900px;
+}
+
+#fn2 div.row2 div.flexContainer:nth-child(2) > div:first-child img {
+  width: 440px;
+}
+
+/* function 3 */
+div#functionContentArea div#fn3 div.leftSide {
+  padding-right: 20px;
+}
+
+#fn3 p.subTitle {
+  width: 100%;
+}
+
+#fn3 div.row2 div.flexContainer:not(:last-child) {
+  margin-bottom: 100px;
+}
+
+#fn3 div.row2 > p:first-child {
+  margin-bottom: 100px;
+}
+
+#fn3 div.row2 div.flexContainer div.imgBox {
+  width: 700px;
+}
+
+div#functionContentArea div#fn3 div.row2 div:nth-child(5) div.flexContainer {
+  justify-content: space-between;
+}
+
+#fn3 div.row2 div:nth-child(5) div.flexContainer div.imgBox {
+  width: 504px;
+}
+
+div#functionContentArea div#fn3 div.row2 div:nth-child(5) p:first-child {
+  margin-bottom: 40px;
+}
+
+/* function 4 */
+div#functionContentArea div#fn4 div.row2 > p:first-child {
+  padding-bottom: 40px;
+}
+
+div#functionContentArea div#fn4 div.row2 > div.flexContainer:not(:last-child) {
+  margin-bottom: 100px;
+}
+
+div#functionContentArea div#fn4 div.row2 > div.flexContainer div:first-child {
+  width: 250px;
+}
+
+#fn4 div.row2 p.subTitle {
+  width: 100%;
+}
+
+div#functionContentArea
+  div#fn4
+  div.row2
+  > div.flexContainer:not(:last-child)
+  div:last-child
+  img {
+  width: 600px;
+  margin-left: 20px;
+}
+
+/* function 5 */
+div#functionContentArea div#fn5 div.row2 > div.flexContainer:nth-child(1),
+div#functionContentArea div#fn5 div.row2 > div.flexContainer:nth-child(2) {
+  margin-bottom: 40px;
+}
+
+div#functionContentArea
+  div#fn5
+  div.row2
+  > div.flexContainer:nth-child(1)
+  div:last-child,
+div#functionContentArea
+  div#fn5
+  div.row2
+  > div.flexContainer:nth-child(2)
+  div:last-child {
+  padding-left: 20px;
+}
+
+#fn5 div.row2 > div.flexContainer:nth-child(1) div.imgBox,
+#fn5 div.row2 > div.flexContainer:nth-child(2) div.imgBox {
+  width: 500px;
+}
+
+#fn5 div.row2 > div.flexContainer:nth-child(3),
+#fn5 div.row2 > div.flexContainer:nth-child(4),
+#fn5 div.row2 > div.flexContainer:nth-child(5) {
+  margin-bottom: 100px;
+}
+
+#fn5 div.row2 > div.flexContainer:nth-child(3) {
+  margin-top: 100px;
+}
+
+#fn5 div.aside {
+  padding-right: 20px;
+  flex: 1;
+}
+
+#fn5 div.aside p.subTitle {
+  width: 100%;
+}
+
+#fn5 div.imgBox {
+  width: 800px;
+}
+
+/* function6 */
+div#functionContentArea div#fn6 div.flexContainer {
+  margin-bottom: 100px;
+}
+
+#fn6 div.row2 div.imgBox {
+  width: 800px;
+}
+
+/* function 7 */
+div#functionContentArea div#fn7 div.aside {
+  padding-left: 30px;
+}
+
+/* function 8 */
+div#functionContentArea div#fn8 div.aside {
+  width: 290px;
+}
+
+#fn8 div.row2 div.aside p.subTitle {
+  width: 100%;
+}
+
+#fn8 div.imgBox {
+  width: 700px;
+  margin-left: 20px;
+}
+
+#fn8 div.row2 > div.flexContainer {
+  margin-top: 100px;
+}
+
+#fn8 div.row2 > div.flexContainer:nth-child(2) img {
+  width: 400px;
+}
+
+/* function 9 */
+
+div#functionContentArea div#fn9 div.row2 div.aside {
+  flex: 1;
+}
+
+#fn9 div.row2 div.aside p.subTitle {
+  width: 100%;
+}
+
+#fn9 div.row2 div.imgBox {
+  width: 800px;
+  margin-left: 20px;
+}
+
+#fn9 div.row2 div.flexContainer:last-child img {
+  width: 500px;
+}
+
+#fn9 div.row2 div.flexContainer {
+  margin-bottom: 100px;
+}
+
+/* function 10 */
+div#functionContentArea div#fn10 div.row2 div.aside {
+  width: 250px;
+}
+
+#fn10 div.row2 div.aside p.subTitle {
+  width: 100%;
+}
+
+#fn10 div.row2 div.imgBox {
+  width: 700px;
+  margin-left: 20px;
+}
+
+#fn10 div.row2 > div.flexContainer:first-child img {
+  width: 300px;
+}
+
+#fn10 div.row2 > div.flexContainer {
+  margin-top: 100px;
+}

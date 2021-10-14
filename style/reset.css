@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+
+body {
+  background-color: #000;
+}
+
+* {
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+a:hover,
+a:active,
+a:link,
+a:visited {
+  color: #333;
+}
+
+.flexContainer {
+  display: flex;
+}

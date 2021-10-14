@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/subCommon.css">
+    <link rel="stylesheet" href="../style/workProject.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/script/workScript.js"></script>
+</head>
+<body>
+    <header id="header" class="flexContainer">
+        <div id="headerLogo">
+            이용수
+        </div>
+        <nav id="headerMenu">
+            <ul class="flexContainer">
+                <li><a href="../about/about.html">about</a></li>
+                <li><a href="../work/workMain.html">work</a></li>
+                <li><a href="../contact/contact.html">contact</a></li>
+            </ul>
+        </nav>
+    </header> <!-- header#header -->
+    <main id="project">
+        <div id="projectTitle">
+            Quater View Action Game
+        </div> <!-- div#projectTitle -->
+        <div class="seperateLine">
+            <p>game play video</p>
+        </div> <!-- div.seperateLine : video -->
+        <div id="projectVideo">
+            <video src="/video/gameplay_project1.mp4"></video>
+        </div> <!-- div#projectVideo -->
+        <div class="seperateLine">
+            <p>motivation of game</p>
+        </div> <!-- div.seperateLine : motivation -->
+        <div id="mainMessage">
+            ゲームプログラミング研修で全体過程仕上げのプロジェクトとして企画した作品です。私を含め4人で一つのチームで"アイザック"というゲームをモチーフに作りました。4人がそれぞれ違うマップを担当にして、ある意味1つのゲームの中に4つのゲームを入れようとしていて、今ご覧の画面の内容はひたすら自分が作った部分だけをアップロードしました。従来の「アイザック」ゲームは、2Dフラッシュゲームに近いです。アイザックの攻撃方法、ストーリーラインなどはそのままにして3D形態で具現し、普段から好きなRPGゲームの形で制作しようとしました。最初にゲームプログラミングの勉強を始めて身につけてきた機能を具現することに焦点を置きました。
+        </div> <!-- div#mainMessage -->
+        <div class="seperateLine">
+            <p>functions</p>
+        </div> <!-- div.seperateLine : functions -->
+        <div id="functionArea">
+            <div class="flexContainer">
+                <div class="function">
+                    <div class="functionImg">
+                        <img src="/images/work/fn1.png" alt="">
+                    </div> <!-- div.functionImg -->
+                    <a data-link="fn1" style="padding-top: 60px;">#マネージャーオブジェクト<br>(Singleton Pattern)</a>
+                </div> <!-- div.function 1 -->
+                <div class="function">
+                    <div class="functionImg">
+                        <img src="/images/work/fn2_1.png" alt="">
+                    </div> <!-- div.functionImg -->
+                    <a data-link="fn2" style="padding-top: 60px;">#キャラクター制御<br>（移動、回転）</a>
+                </div> <!-- div.function 2 -->
+                <div class="function">
+                    <div class="functionImg">
+                        <img src="/images/work/fn3_3.png" alt="">
+                    </div> <!-- div.functionImg -->
+                    <a data-link="fn3">#アニメーション</a>
+                </div> <!-- div.function 3 -->
+                <div class="function">
+                    <div class="functionImg">
+                        <img src="/images/work/fn4_1.png" alt="">
+                    </div> <!-- div.functionImg -->
+                    <a data-link="fn4">#オブジェクトプーリン</a>
+                </div> <!-- div.function 4 -->
+                <div class="function">
+                    <div class="functionImg">
+                        <img src="/images/work/fn5_1.png" alt="">
+                    </div> <!-- div.functionImg -->
+                    <a data-link="fn5">#ランダム攻撃</a>
+                </div> <!-- div.function 5 -->
+            </div>
+            <div class="flexContainer">
+                <div class="function">
+                    <div class="functionImg">
+                        <img src="/images/work/fn6_1.png" alt="">
+                    </div> <!-- div.functionImg -->
+                    <a data-link="fn6">#ナビメッシュエージェント</a>
+                </div> <!-- div.function 6 -->
+                <div class="function">
+                    <div class="functionImg">
+                        <img src="/images/work/fn7_1.png" alt="">
+                    </div> <!-- div.functionImg -->
+                    <a data-link="fn7">#マップ移動（ポータル）</a>
+                </div> <!-- div.function 7 -->
+                <div class="function">
+                    <div class="functionImg">
+                        <img src="/images/work/fn8_4.png" alt="">
+                    </div> <!-- div.functionImg -->
+                    <a data-link="fn8">#UI生成</a>
+                </div> <!-- div.function 8 -->
+                <div class="function">
+                    <div class="functionImg">
+                        <img src="/images/work/fn9_1.png" alt="">
+                    </div> <!-- div.functionImg -->
+                    <a data-link="fn9">#商店</a>
+                </div> <!-- div.function 9 -->
+                <div class="function">
+                    <div class="functionImg">
+                        <img src="/images/work/fn10_1.png" alt="">
+                    </div> <!-- div.functionImg -->
+                    <a data-link="fn10">#ライトの最適化</a>
+                </div> <!-- div.function 10 -->
+            </div>
+        </div> <!-- div#functionArea -->
+        <div id="functionContentArea">
+            <div id="bg"><!-- background color --></div>
+            <div id="fn1" class="functionItem" style="display: none;">
+                <div class="closeBtn"><div></div><div></div></div>
+                <div class="row1">
+                    <p class="title">マネージャーオブジェクト</p>
+                    <p class="subtitle">マネージャーオブジェクト</p>
+                </div> <!-- div.row1 -->
+                <div class="row2 flexContainer">
+                    <div>
+                        <img src="/images/work/fn1.png" alt="">
+                    </div>
+                    <div>
+                        <p class="explain">
+                            シングルトーンパターンを使用しゲームマネージャーオブジェクト一つで、すべてのマネージャーに接近できるようにしました。シーン切り替え時にも消えないオブジェクトを通じて他のマネージャースクリプトにアクセスできるようにするためです。
+                        </p>
+                    </div>
+                </div> <!-- div.row2 -->
+            </div> <!-- div#fn1 -->
+            <div id="fn2" class="functionItem" style="display: none;">
+                <div class="closeBtn"><div></div><div></div></div>
+                <div class="row1">
+                    <p class="title">キャラクター制御（移動、回転）</p>
+                    <p class="subtitle">キャラクター制御（移動、回転）</p>
+                </div> <!-- div.row1 -->
+                <div class="row2 ">
+                    <div class="flexContainer">
+                        <div class="imgBox"><img src="/images/work/fn2_1.png" alt=""></div>
+                        <div class="aside">
+                            <p>キーボードとマウスを入力した時にイベントを発生させて動くようにしました。Ｗ(↑), A(←), S(↓), D(→)</p>
+                        </div>
+                    </div>
+                    <div class="flexContainer">
+                        <div class="imgBox">
+                            <img src="/images/work/fn2_2.png" alt="">
+                            <img src="/images/work/fn2_3.png" alt="">
+                        </div>
+                        <div class="aside">
+                            マウスをクリック時、Raycastをして、マウスクリックの地点を見るようにしました。
+                        </div>
+                    </div>
+                </div> <!-- div.row2 -->
+            </div> <!-- div#fn2 -->
+            <div id="fn3" class="functionItem" style="display: none;">
+                <div class="closeBtn"><div></div><div></div></div>
+                <div class="row1">
+                    <p class="title">アニメーション</p>
+                    <p class="subtitle">アニメーション</p>
+                </div> <!-- div.row1 -->
+                <div class="row2">
+                    <p>アニメーションのレイヤーを使って、上半身、下半身のアニメを別に作りました。</p>
+                    <div class="flexContainer">
+                        <div class="leftSide">
+                            <p class="subTitle">ベースレイヤー</p>
+                            <p>歩いたり、走ったり、停止するなど、基本的な動きと関連されたアニメを制御します。</p>
+                        </div>
+                        <div class="imgBox"><img src="/images/work/fn3_1.png" alt=""></div>
+                    </div>
+                    <div class="flexContainer">
+                        <div class="leftSide">
+                            <p class="subTitle">ショットレイヤー</p>
+                            <p>銃と関連した手の動きに特化したレイヤーです。 銃を装填したり、武器交換、武器発射に関するアニメを担当します。</p>
+                        </div>
+                        <div class="imgBox"><img src="/images/work/fn3_2.png" alt=""></div>
+                    </div>
+                    <div class="flexContainer">
+                        <div class="leftSide">
+                            <p class="subTitle">アバターマスク</p>
+                            <p>赤色部分はベースレイヤーを基にした基本のアニメであり、緑色部分はベースレイヤーにショットトレイ語を追加して特定のアニメを具現した。ゲームでは主に武器を取った腕の動きを具現する上で、使用した。</p>
+                        </div>
+                        <div class="imgBox"><img src="/images/work/fn3_3.png" alt=""></div>
+                    </div>
+                    <div>
+                        <div>
+                            <p>そして、ブレンドツリーを使用し、プレイヤーの攻撃方向によって下半身アニメーションが変わるように作りました。<br>キーボードの入力とマウスの入力方向を計算し、違うアニメーションをプレイ!</p>
+                        </div>
+                        <div  class="flexContainer">
+                            <div class="imgBox">
+                                <img src="/images/work/fn3_4.png" alt="" width="540px">
+                            </div>
+                            <div class="imgBox">
+                                <img src="/images/work/fn3_5.png" alt="" width="540px">
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- div.row2 -->
+            </div> <!-- div#fn3 -->
+            <div id="fn4" class="functionItem" style="display: none;">
+                <div class="closeBtn"><div></div><div></div></div>
+                <div class="row1">
+                    <p class="title">オブジェクトプーリン</p>
+                    <p class="subtitle">オブジェクトプーリン</p>
+                </div> <!-- div.row1 -->
+                <div class="row2">
+                    <p>プレイヤーの銃弾とモンスターはQueue, Listを使用してオブジェクトプーリングを実現しました。</p>
+                    <div class="flexContainer">
+                        <div><p class="subTitle">オブジェクトプーリング</p></div>
+                        <div><img src="/images/work/fn4_1.png" alt=""></div>
+                    </div>
+                    <div class="flexContainer">
+                        <div><p class="subTitle">オブジェクトゲット</p></div>
+                        <div><img src="/images/work/fn4_2.png" alt=""></div>
+                    </div>
+                    <div class="flexContainer">
+                        <div><p class="subTitle">オブジェクト返還</p></div>
+                        <div><img src="/images/work/fn4_3.png" alt=""></div>
+                    </div>
+                </div> <!-- div.row2 -->
+            </div> <!-- div#fn4 -->
+            <div id="fn5" class="functionItem" style="display:none;">
+                <div class="closeBtn"><div></div><div></div></div>
+                <div class="row1">
+                    <p class="title">ランダム攻撃</p>
+                    <p class="subtitle">ランダム攻撃</p>
+                </div> <!-- div.row1 -->
+                <div class="row2">
+                    <div class="flexContainer">
+                        <div class="imgBox"><img src="/images/work/fn5_1.png" alt=""></div>
+                        <div>
+                            <p>基本的にBOSSモンスターはプレイヤーのポジションを予測する量のベクトルをまして、回転します。</p>
+                        </div>
+                    </div>
+                    <div class="flexContainer">
+                        <div class="imgBox"><img src="/images/work/fn5_2.png" alt=""></div>
+                        <div>
+                            <p>そして、攻撃の形はランダム攻撃関数を利用し、ナイフやボールを投げます。</p>
+                        </div>
+                    </div>
+                    <div class="flexContainer">
+                        <div class="aside">
+                            <p class="subTitle">ナイフ攻撃コルーチン</p>
+                            <p>ナイフ生成</p>
+                        </div>
+                        <div class="imgBox"><img src="/images/work/fn5_3.png" alt=""></div>
+                    </div>
+                    <div class="flexContainer">
+                        <div class="aside">
+                            <p class="subTitle">ナイフ移動</p>
+                            <p>ナイフができると物理の力を与えて前方に移動</p>
+                        </div>
+                        <div class="imgBox"><img src="/images/work/fn5_4.png" alt=""></div>
+                    </div>
+                    <div class="flexContainer">
+                        <div class="aside">
+                            <p class="subTitle">ボール攻撃コルーチン</p>
+                            <p>● ボール生成</p>
+                        </div>
+                        <div class="imgBox"><img src="/images/work/fn5_5.png" alt=""></div>
+                    </div>
+                    <div class="flexContainer">
+                        <div class="aside">
+                            <p>● ボール移動</p>
+                            <p>一定時間ボールのスケール、力をまして、回転物理力で移動</p>
+                        </div>
+                        <div class="imgBox"><img src="/images/work/fn5_6.png" alt=""></div>
+                    </div>
+                </div> <!-- div.row2 -->
+            </div> <!-- div#fn5 -->
+            <div id="fn6" class="functionItem" style="display:none;">
+                <div class="closeBtn"><div></div><div></div></div>
+                <div class="row1">
+                    <p class="title">ナビメッシュエージェント</p>
+                    <p class="subtitle">ナビメッシュエージェント</p>
+                </div> <!-- div.row1 -->
+                <div class="row2">
+                    <div class="flexContainer">
+                        <div>
+                            <p>
+                                ナビメッシュエージェントを使用してプレイヤーを追跡するモンスターを作りました。モンスターが追跡する範囲をオブジェクトベーク(bake)して決めました。
+                            </p>
+                            <p>
+                                モンスターとプレイヤーの距離を計算し、 追跡範囲内に入ったら移動します。
+                            </p>
+                        </div>
+                        <div class="imgBox">
+                            <img src="/images/work/fn6_1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="flexContainer">
+                        <div>
+                            <p>モンスターとプレイヤーの距離を計算し、追跡範囲内に入ったら移動します。</p>
+                        </div>
+                        <div class="imgBox">
+                            <img src="/images/work/fn6_2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="flexContainer">
+                        <div>
+                            <p>そして、プレイヤーがモンスターの攻撃範囲に入ったら攻撃を開始します。</p>
+                        </div>
+                        <div class="imgBox">
+                            <img src="/images/work/fn6_3.png" alt="">
+                        </div>
+                    </div>
+                </div> <!-- div.row2 -->
+            </div> <!-- div#fn6 -->
+            <div id="fn7" class="functionItem" style="display:none;">
+                <div class="closeBtn"><div></div><div></div></div>
+                <div class="row1">
+                    <p class="title">マップ移動（ポータル）</p>
+                    <p class="subtitle">マップ移動（ポータル）</p>
+                </div> <!-- div.row1 -->
+                <div class="row2">
+                    
+                    <div class="flexContainer">
+                        <div class="imgBox"><img src="/images/work/fn7_1.png" alt=""></div>
+                        <div class="aside">
+                            <p>すべてのモンスターが死亡するとマップ移動が可能なポータルを活性化するようにしました</p>
+                            <p>ステージ３になるとマップ移動オブゼダート活性化。ボースマップ移動時、ボスモンスター 活性化。</p>
+                        </div>
+                    </div>
+                </div> <!-- div.row2 -->
+            </div> <!-- div#fn7 -->
+            <div id="fn8" class="functionItem" style="display:none;">
+                <div class="closeBtn"><div></div><div></div></div>
+                <div class="row1">
+                    <p class="title">UI生成</p>
+                    <p class="subtitle">UI生成</p>
+                </div> <!-- div.row1 -->
+                <div class="row2">
+                    <p>SceneUIをPrefabで作ってゲームをスタートする時、名前を探して自動生成できるようにしました。UIはポップアップUIと一般UIを区分し、ポップアップUIはSort Orderを使用して、スタック構造で作りました。</p>
+                    <div class="flexContainer">
+                        <div class="aside"><p class="subTitle">ポップアップUIのクリエイト</p></div>
+                        <div class="imgBox"><img src="/images/work/fn8_1.png" alt=""></div>
+                    </div>
+                    <div class="flexContainer">
+                        <div class="aside">
+                            <p class="subTitle">キャンバス Sort Order</p>
+                            <p>ポップアップUIを生成しながらスタックに入れて Sort Orderをプラス。</p>
+                        </div>
+                        <div class="imgBox"><img src="/images/work/fn8_2.png" alt=""></div>
+                    </div>
+                </div> <!-- div.row2 -->
+            </div> <!-- div#fn8 -->
+            <div id="fn9" class="functionItem" style="display:none;">
+                <div class="closeBtn"><div></div><div></div></div>
+                <div class="row1">
+                    <p class="title">商店</p>
+                    <p class="subtitle">商店</p>
+                </div> <!-- div.row1 -->
+                <div class="row2">
+                    <div class="flexContainer">
+                        <div class="aside">
+                            <p class="subTitle">初期化</p>
+                            <p>１）コードでUIオブジェクトの管理ができるようにバインド関数作成</p>
+                            <p>２）オブジェクトとクリックイベントの連結</p>
+                        </div>
+                        <div class="imgBox"><img src="/images/work/fn9_1.png" alt=""></div>
+                    </div>
+                    <div class="flexContainer">
+                        <div class="aside">
+                            <p class="subTitle">クリックメソード</p>
+                            <p>クリック時、お金が減り、
+                                武器UI活性化</p>
+                        </div>
+                        <div class="imgBox">
+                            <img src="/images/work/fn9_2.png" alt="">
+                        </div>
+                    </div>
+                </div> <!-- div.row2 -->
+            </div> <!-- div#fn9 -->
+            <div id="fn10" class="functionItem">
+                <div class="closeBtn"><div></div><div></div></div>
+                <div class="row1">
+                    <p class="title">ライトの最適化</p>
+                    <p class="subtitle">ライトの最適化</p>
+                </div> <!-- div.row1 -->
+                <div class="row2">
+                    <div class="flexContainer">
+                        <div class="aside">
+                            <p class="subTitle">ライトマップデータ</p>
+                        </div>
+                        <div class="imgBox"><img src="/images/work/fn10_1.png" alt=""></div>
+                    </div>
+                    <div class="flexContainer">
+                        <div class="aside">
+                            <p class="subTitle">ライトプローブグループ</p>
+                            <p>１）ライトマッピングをして静的なオブジェクトのライトの最適化</p>
+                            <p>２）ライトプローブグループを使って動的なオブジェクトのライトの最適化</p>
+                        </div>
+                        <div class="imgBox"><img src="/images/work/fn10_2.png" alt=""></div>
+                    </div>
+                </div> <!-- div.row2 -->
+            </div> <!-- div#fn10 -->
+        </div> <!-- div#functionContentArea -->
+        <div class="seperateLine">
+            <p>download</p>
+        </div>
+        <div id="download">
+            <p>以下のリンクにアクセスすると、プロジェクト全体のファイルをダウンロードできます。 作成したスクリプトを閲覧できます。</p>
+            <div class="flexContainer">
+                <div><a href="https://drive.google.com/drive/folders/1UzPEkOCDN4hKCB71jKYJzESnybCzeCKA?usp=sharing">Google Drive</a></div>
+                <div><a href="https://o365doowon.sharepoint.com/:f:/s/LEEYONGSU/Eioyi2WGuqpAr6XkbsojqHABK57t-qTqDpzHFn_qA1iOFg?e=TbCx46">One Drive</a></div>
+            </div>
+        </div> <!-- div#download -->
+    </main> <!-- main#project -->
+    <footer id="footer">
+        <p>&copy; 2021. Lee Yongsu All Rights Reserved</p>
+    </footer> <!-- footer#footer -->
+</body>
+</html>

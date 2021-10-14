@@ -1,0 +1,50 @@
+@charset "UTF-8";
+@import url(reset.css);
+
+body {
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+header#header {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  justify-content: space-between;
+}
+
+#header div#headerLogo {
+  width: 100px;
+  text-align: left;
+}
+
+nav#headerMenu ul li a {
+  color: #fff;
+  height: 40px;
+  margin-left: 20px;
+  text-align: center;
+  display: inline-block;
+}
+
+#headerMenu ul li a:hover {
+  color: #f7fd04;
+  border-bottom: 1px solid #F7FD04;
+}
+
+/* header end */
+
+/* footer start */
+
+footer#footer {
+  height: 80px;
+  background-color: #fff;
+}
+
+#footer p {
+  color: #F1FA3C;
+  padding-top: 50px;
+  font-size: 80px;
+  text-align: left;
+}
+
+/* footer end */
