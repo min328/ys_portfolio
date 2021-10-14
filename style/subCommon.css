@@ -16,19 +16,26 @@ header#header {
 #header div#headerLogo {
   width: 100px;
   text-align: left;
+  font-weight: bold;
 }
 
 nav#headerMenu ul li a {
-  color: #fff;
-  height: 40px;
+  color: #000272;
+  height: 35px;
   margin-left: 20px;
   text-align: center;
   display: inline-block;
+  font-weight: bold;
 }
 
 #headerMenu ul li a:hover {
-  color: #f7fd04;
-  border-bottom: 1px solid #F7FD04;
+  border-bottom: 5px solid #150485;
+}
+
+#headerMenu ul li a.selected {
+  color: #fff;
+  background-color: #150485;
+  border-bottom: 5px solid #fff;
 }
 
 /* header end */
@@ -36,12 +43,10 @@ nav#headerMenu ul li a {
 /* footer start */
 
 footer#footer {
-  height: 80px;
   background-color: #fff;
 }
 
 #footer p {
-  color: #F1FA3C;
   padding-top: 50px;
   font-size: 80px;
   text-align: left;

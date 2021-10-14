@@ -4,10 +4,11 @@
 div#toTop {
   width: 50px;
   height: 50px;
-  border: 1px solid #fff;
+  border: 1px solid #150485;
   border-radius: 50px;
   line-height: 50px;
   text-align: center;
+  font-weight: bold;
   position: fixed;
   right: 20px;
   bottom: 20px;
@@ -20,6 +21,7 @@ div#goBack {
   right: 46px;
   top: 80px;
   cursor: pointer;
+  font-weight: bold;
 }
 
 
@@ -28,7 +30,7 @@ footer#footer {
 }
 
 #footer p {
-  color: #fff;
+  color: #150485;
   font-size: 65px;
   text-align: center;
 }
@@ -151,9 +153,8 @@ main#project {
 }
 
 .row1 p.subtitle {
-  color: #aaa;
-  font-weight: bold;
-  font-size: 18px;
+  color: #fff;
+  font-size: 20px;
   font-family: "M PLUS 1p", sans-serif;
 }
 
@@ -178,7 +179,7 @@ main#project {
 .functionItem div.closeBtn > div {
   width: 40px;
   height: 40px;
-  border-left: 1px solid #fff;
+  border-left: 1px solid #777;
   position: absolute;
   right: 0;
   top: 0;
@@ -210,12 +211,12 @@ main#project {
 #download div.flexContainer > div {
   width: 540px;
   height: 200px;
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
+  border-top: 1px solid #150485;
+  border-bottom: 1px solid #150485;
 }
 
 #download a {
-  color: #fff;
+  color: #150485;
   width: 100%;
   height: 100%;
   line-height: 200px;
@@ -227,7 +228,7 @@ main#project {
 }
 
 #download div.flexContainer > div a:hover {
-  color: #000;
+  color: #150485;
   background-color: #fff;
   transition: 0.2s;
 }
@@ -251,10 +252,11 @@ main#project {
 /* function content specific css start */
 /* common */
 div#functionContentArea .subTitle {
-  color: #000;
+  color: #150485;
   padding-left: 10px;
   padding-right: 10px;
-  background-color: #fff;
+  margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.6);
   font-size: 20px;
   font-weight: bold;
   display: inline-block;

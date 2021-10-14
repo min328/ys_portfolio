@@ -16,14 +16,12 @@ main#workMain {
   font-size: 50px;
 }
 
-#workMain div.itemList {
-  background-color: #fff;
-}
-
 #workMain div.itemList div.itemBox {
   padding: 20px;
+  margin: 1px;
+  border: 1px solid #fff;
+  background-color: #fff;
   flex: 1;
-  border: 1px solid #000;
 }
 
 #workMain div.itemList div.active {
@@ -65,28 +63,37 @@ main#workMain {
 }
 
 .itemBox div.badges span {
+  color: #fff;
   font-weight: bold;
   padding: 2px 10px;
   background-color: #000;
 }
 
 .itemBox div.badges span.c {
-  background-color: #94fc13;
+  background-color: #82df10;
 }
 
 .itemBox div.badges span.unity {
-  background-color: #32ff6a;
+  background-color: #19e750;
 }
 
 .itemBox div.badges span.date {
   background-color: #837dff;
 }
 
+.itemBox div.badges span.mobile {
+  background-color: #e02401;
+}
+
+.itemBox div.badges span.etc {
+  background-color: #e02401;
+}
+
 .itemBox div.itemName {
-  color: #000;
+  color: #150485;
   height: 100px;
   padding-top: 20px;
-  border-top: 1px solid #333;
+  border-top: 1px solid #150485;
   margin-top: 20px;
   font-size: 25px;
   font-weight: bold;
@@ -95,16 +102,17 @@ main#workMain {
 
 .itemBox div.itemName p {
   width: 100%;
-  color: #aaa;
+  color: #555;
   padding-top: 5px;
   font-size: 14px;
   overflow-wrap: break-word;
 }
 
+
 .itemList div.noContent div.imgBox,
 .itemList div.noContent div.badges,
 .itemList div.noContent div.itemName {
-  background-color: rgba(100, 100, 100, 0.5);
+  background-color: #ddd;
   opacity: 0.2;
   border: none;
 }

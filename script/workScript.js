@@ -77,6 +77,6 @@ $(function(){
             , "transition" : "0.5s"
         });
 
-        $(this).parent("div.functionItem").delay(700).slideUp(1000);
+        $(this).parent("div.functionItem").delay(700).fadeOut(1000);
     });
 });

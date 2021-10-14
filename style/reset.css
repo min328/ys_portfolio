@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
 
 body {
-  background-color: #000;
+  background-color: #eee;
 }
 
 * {
-  color: #fff;
+  color: #000272;
   padding: 0;
   margin: 0;
   text-decoration: none;
