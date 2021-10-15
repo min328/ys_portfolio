@@ -513,11 +513,11 @@ div#functionContentArea div#fn10 div.row2 div.aside {
 }
 
 header {
-  animation: 3s ease-in-out 0s 1 fadeIn_1;
+  animation: 2s ease-in-out 0s 1 fadeIn_1;
 }
 
 main, div#goBack {
-  animation: 2s ease-in-out 0s 1 fadeIn_2;
+  animation: 1s ease-in-out 0s 1 fadeIn_2;
 }
 
 /* keyframes end */

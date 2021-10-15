@@ -79,4 +79,7 @@ $(function(){
 
         $(this).parent("div.functionItem").delay(700).fadeOut(1000);
     });
+
+
+
 });

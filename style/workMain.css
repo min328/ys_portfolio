@@ -129,3 +129,37 @@ div.mouseTag {
   left: 0;
   opacity: 0;
 }
+
+
+/* keyframes start */
+
+@keyframes fadeIn_1 {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 100%;
+  }
+}
+
+@keyframes fadeIn_2 {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+header {
+  animation: 2s ease-in-out 0s 1 fadeIn_1;
+}
+
+main {
+  animation: 1s ease-in-out 0s 1 fadeIn_2;
+}
+
+/* keyframes end */

@@ -3,9 +3,22 @@
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300&display=swap"); /* japanese font */
 @import url("https://fonts.googleapis.com/css2?family=MuseoModerno:wght@200&display=swap"); /* resume down button font */
 
+span#res {
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  border: 1px solid #000;
+  background-color: #fff;
+  color: #f00;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+
 /* main#about start */
 main#about {
-  border-top: 1px solid #fff;
+  border-top: 1px solid #000272;
   margin-top: 240px;
 }
 
@@ -53,6 +66,7 @@ main#about {
   padding: 10px;
   margin: 10px;
   background-color: #fff;
+  opacity: 0;
 }
 
 #about
@@ -96,8 +110,9 @@ main#about {
 }
 
 #about div.questionair div.question p:first-child {
-  color: #f1f4df;
+  color: #000272;
   border-bottom: 1px solid #aaa;
+  font-weight: 600;
   font-family: "M PLUS 1p", sans-serif;
 }
 
@@ -121,18 +136,32 @@ main#about {
   font-family: "M PLUS 1p", sans-serif;
 }
 
+#about div#q1
+, #about div#q2
+, #about div#q3 {
+  margin-top: 100px;
+  opacity: 0;
+}
+
+#about h2#basicInfoLine {
+  opacity: 0;
+}
+
 #about div#resume {
   height: 300px;
+  margin-left: 2080px;
   padding-top: 100px;
   text-align: center;
   background-color: #fff;
   position: relative;
+
 }
 
 #resume p {
   color: #000;
   font-size: 30px;
   font-weight: bold;
+  display: none;
 }
 
 #resume div#downloadBtn {
@@ -143,16 +172,19 @@ main#about {
   line-height: 50px;
   font-size: 25px;
   position: absolute;
-  left: 50%;
-  bottom: 80px;
+  left: 49.3%;
+  bottom: 90px;
   transform: translateX(-50%);
   z-index: 2;
-}
+  cursor: pointer;
+  display: none;
+} 
 
 #downloadBtn a {
   font-family: "MuseoModerno", cursive;
   font-weight: bold;
-}
+  display: none;
+} 
 
 #resume div#btnBackground {
   width: 700px;
@@ -162,12 +194,9 @@ main#about {
   left: 50%;
   bottom: 80px;
   transform: translateX(-50%);
-}
+  display: none;
+} 
 
-#resume div#downloadBtn:hover {
-  left: 49.3%;
-  bottom: 90px;
-}
 
 div#extraImg {
   width: 300px;
@@ -179,3 +208,94 @@ div#extraImg {
   background-size: contain;
   background-repeat: no-repeat;
 }
+
+/* keyframes start */
+
+@keyframes fadeIn_1 {
+  0% {
+    opacity: 0%;
+  }
+  25% {
+    opacity: 100%;
+  }
+}
+
+@keyframes fadeIn_2 {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 100%;
+  }
+}
+
+@keyframes fadeIn_3 {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 0%;
+  }
+  75% {
+    opacity: 100%;
+  }
+}
+
+@keyframes fadeIn_4 {
+  0% {
+    opacity: 0%;
+  }
+  75% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes fadeIn_5 {
+  0% {
+    opacity: 0%;
+  }
+  90% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes aboutLineChange {
+  0% {
+    border-top: 1px solid #fff;
+  }
+  100% {
+    border-top: 1px solid #000272;
+  }
+}
+
+header {
+  animation: 3s ease-in-out 0s 1 fadeIn_1;
+}
+
+main {
+  animation: 3s ease-in-out 0s 1 fadeIn_2;
+}
+
+div#extraImg {
+  animation: 2s ease-in-out 0s 1 fadeIn_3;
+}
+
+div#profileImg {
+  animation: 2s ease-in-out 0s 1 fadeIn_4;
+}
+
+main#about > div:first-child > div:first-child {
+  animation: 2s ease-in-out 0s 1 fadeIn_5;
+}
+
+main#about {
+  animation: 3s ease-in-out 0s 1 aboutLineChange;
+}
+
+/* keyframes end */

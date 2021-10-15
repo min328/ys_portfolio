@@ -7,8 +7,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="../style/subCommon.css">
     <link rel="stylesheet" href="../style/about.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/script/aboutScript.js"></script>
 </head>
 <body>
+    <span id="res"></span>
     <header id="header" class="flexContainer">
         <div id="headerLogo">
             LEE Y.S.
@@ -27,12 +30,12 @@
                 <h1>Hi.</h1>
                 <h1>I'm <span id="meName">Yongsu Lee</span>!</h1>
             </div>
-            <div class="imgBox">
+            <div id="profileImg" class="imgBox">
                 <!--  image is inserted with css background-image -->
             </div>
         </div> <!-- div.contentArea:first-child -->
         <div class="contentArea">
-            <h2>Basic Perosnal Information</h2>
+            <h2 id="basicInfoLine">Basic Perosnal Information</h2>
             <div class="flexContainer">
                 <div class="basicInfo">
                     <p class="infoTitle">生年月日</p>
@@ -70,7 +73,7 @@
                 </div>
             </div>
         </div> <!-- div.contentArea:nth-child(2) : basic informations-->
-        <div class="contentArea questionair flexContainer">
+        <div id="q1" class="contentArea questionair flexContainer">
             <div class="question">
                 <p>­­＋ QUESTION 1</p>
                 <p>ゲームプログラミングを始めたきっかけは何ですか？</p>
@@ -79,7 +82,7 @@
                 <p>私が好きなものが何なのか分からなくて探そうと努力していました。 やってみなければいいのか嫌かわかると思い、機会があれば何でもしてみました。 そんな中、IT業界で働いている知り合いがITの方に就職してみたらどうかという質問にプログラミングについて探してみました。 日本のウェブ開発者就職国費過程でプログラミングを初めて接するようになりました 努力をしなかったのか適性に合っていなかったのか分からないが、面白くなかったです。 過程が終わって何をすればいいのか、どうせ始めたのだからIT関連職種で探してみてゲーム開発を知り、また挑戦するようになりました。 自分の手でゲームを一つ一つ最初から作っていく作業が私にとってとても面白くてついにやりたいことが何であるかが分かりました。 今もゲーム開発者になるため挑戦しています。</p>
             </div> <!-- div.answer -->
         </div> <!-- div.questionair -->
-        <div class="contentArea questionair flexContainer">
+        <div id="q2" class="contentArea questionair flexContainer">
             <div class="question">
                 <p>­­＋ QUESTION 2</p>
                 <p>ゲームプログラマーとしてのビジョンは何ですか？</p>
@@ -96,7 +99,7 @@
                 </p>
             </div> <!-- div.answer -->
         </div> <!-- div.questionair -->
-        <div class="contentArea questionair flexContainer">
+        <div id="q3" class="contentArea questionair flexContainer">
             <div class="question">
                 <p>­­＋ QUESTION 1</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
@@ -109,7 +112,7 @@
         </div> <!-- div.questionair -->
         <div id="resume">
             <p>for more details, here's my resume.</p>
-            <div id="downloadBtn"><a href="">DOWNLOAD (NIHONNGO)</a></div>
+            <div id="downloadBtn"><a>DOWNLOAD (NIHONNGO)</a></div>
             <div id="btnBackground"></div>
         </div> <!-- div#resume -->
     </main>
